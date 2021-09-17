@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class AboutScreen extends StatefulWidget {
-
   @override
   _AboutScreenState createState() => _AboutScreenState();
 }
@@ -9,10 +8,8 @@ class AboutScreen extends StatefulWidget {
 class _AboutScreenState extends State<AboutScreen> {
   @override
   void initState() {
-
     super.initState();
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -26,32 +23,34 @@ class _AboutScreenState extends State<AboutScreen> {
           ),
         ),
         leading: IconButton(
-          onPressed: (){
+          onPressed: () {
             Navigator.of(context).pop();
           },
-          icon: Icon(Icons.arrow_back_ios_outlined,color: Colors.black),
+          icon: Icon(Icons.arrow_back_ios_outlined, color: Colors.black),
         ),
         actions: [
           Container(
             margin: EdgeInsetsDirectional.only(end: 15),
-
             child: Stack(
               alignment: Alignment.topRight,
               children: [
                 IconButton(
-                  onPressed: (){
+                  onPressed: () {
                     Navigator.of(context).pushNamed('NotificationScreen');
                   },
-                  icon: Icon(Icons.notifications_none,color: Colors.black,size: 40,),
+                  icon: Icon(
+                    Icons.notifications_none,
+                    color: Colors.black,
+                    size: 40,
+                  ),
                 ),
                 CircleAvatar(
-
                   radius: 9,
                   backgroundColor: Colors.red,
                   child: Text(
                     '3',
                     style: TextStyle(
-                      fontSize: 10  ,
+                      fontSize: 10,
                       color: Colors.white,
                     ),
                   ),
@@ -60,21 +59,25 @@ class _AboutScreenState extends State<AboutScreen> {
             ),
           ),
         ],
-
       ),
-      body:  SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Container(
           margin: EdgeInsets.all(15),
-          child: Column(
+          child: Column( // ليه كولوم جوه كولوم امسح واحد فيهم
             children: [
               Column(
                 children: [
                   Container(
                     height: 200,
                     width: double.infinity,
-                    child: Image.asset('assets/images/Leader.jpg',fit: BoxFit.fill,),
+                    child: Image.asset(
+                      'assets/images/Leader.jpg',
+                      fit: BoxFit.fill,
+                    ),
                   ),
-                  SizedBox(height: 10,),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Text(
                       """This text is an example of a text that can be replaced in the same
 Space, this text was generated from the English text generator
@@ -95,17 +98,13 @@ It is related to the topic that the design is talking about, so it appears
 This text can be installed on any design without
 Problem it won't look like copied, disorganized, disorganized text
 , coordinated, or even incomprehensible. Because it is still stiff and temporary
-                    """
-                  ),
+                    """),
                 ],
               ),
-
             ],
           ),
         ),
       ),
-
-
     );
   }
 }

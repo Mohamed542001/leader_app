@@ -91,6 +91,7 @@ class _FavoriteScreenState extends State<FavoriteScreen> with SingleTickerProvid
   }
   late TabController myController;
   int selectedIndex=0;
+
   @override
   void initState() {
     myController=new TabController(length: 2, vsync: this,initialIndex: 0);
@@ -169,7 +170,8 @@ class _FavoriteScreenState extends State<FavoriteScreen> with SingleTickerProvid
       body: TabBarView(
         controller: myController,
         children: [
-          Container(
+          Container( // ليه استخدمت GridView.builder
+            // وامتي بستخدمها ،امتي بستخدم ال wrap
             child: GridView.builder(
               itemCount: model.length,
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3,mainAxisSpacing: 40),
@@ -251,6 +253,9 @@ class _FavoriteScreenState extends State<FavoriteScreen> with SingleTickerProvid
       ],
     ),
   );
+
+
+  // عاش
   Widget buildRecentlySeenItem(List<FavoriteModel> model,index)=>SingleChildScrollView(
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,

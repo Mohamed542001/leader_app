@@ -173,7 +173,7 @@ class _OrdersScreenState extends State<OrdersScreen> with SingleTickerProviderSt
                           SingleChildScrollView(
                             scrollDirection: Axis.horizontal,
                             child: Container(
-                              padding: EdgeInsetsDirectional.only(start: 10,end: 10,bottom: 10),
+                              padding: EdgeInsetsDirectional.only(start: 10,end: 10,bottom: 10), // متستخدمش اي direction في التطبيق علشان اللغه
                               child: SingleChildScrollView(
                                 scrollDirection: Axis.horizontal,
                                 child: Row(
@@ -181,11 +181,11 @@ class _OrdersScreenState extends State<OrdersScreen> with SingleTickerProviderSt
 
                                   children: [
                                     Container(
-                                      height: 80,
+                                      height: 80, // Image.asset ليه مستخدم كونتينر هنا وانت ممكن تعطي طول ف
                                       child: Image.asset('assets/images/Men1.webp',),
                                     ),
-                                    SizedBox(
-                                      width: 10,
+                                    SizedBox( // SizedBox ليه مستخدم
+                                      width: 10,// وانت مستخدم كونتينر فوق وممكن تستخدم margin
                                     ),
                                     Container(
                                       height: 80,

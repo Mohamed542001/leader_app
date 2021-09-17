@@ -77,7 +77,8 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
           indicatorColor: Colors.black,
           labelColor: Colors.black,
           controller: myController,
-          tabs: [
+          tabs: [ // في الحاله دي مش هتستخدم التاب بار علشان داتا راجعه من السيرفر
+            // هتستخدم ال listView.builder وخليه افقي
             Tab(
               child: Text(
                   'Men',

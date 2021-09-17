@@ -13,7 +13,6 @@ class _AccountScreenState extends State<AccountScreen> {
       appBar: AppBar(
         leading: Container(
           margin: EdgeInsets.all(5),
-
           child: Image.asset('assets/images/Profile.jpg',width: 50,height: 60,),
         ),
         title: Column(
@@ -107,7 +106,7 @@ class _AccountScreenState extends State<AccountScreen> {
                         ],
                       ),
                       Container(
-                        width: double.infinity,
+                        width: double.infinity, // استخدم ال MediaQuery
                         child: SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
                           child: Row(
@@ -115,7 +114,8 @@ class _AccountScreenState extends State<AccountScreen> {
                               Container(
                                 width: 53,
                                 height: 40,
-                                child: MaterialButton(
+                                child: MaterialButton( // استخدم Inkwell العادي
+                                  // ومستخدمش ال MaterialButton علشان شكلها ف ابل
                                     onPressed: (){},
                                   child: Column(
                                     children: [

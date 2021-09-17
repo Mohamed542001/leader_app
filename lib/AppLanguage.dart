@@ -205,7 +205,7 @@ class _AppLanguageState extends State<AppLanguage> {
               margin: EdgeInsets.all(20),
               width: double.infinity,
               decoration: BoxDecoration(
-                  color: Color.fromRGBO(20, 80, 65, 1),
+                  color: Color.fromRGBO(20, 80, 65, 1), // user Colors.
                   borderRadius: BorderRadius.circular(5)
               ),
               child: TextButton(

@@ -182,7 +182,7 @@ class _ContactUsState extends State<ContactUs> {
 
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: [ // عاش بس استخدم arrow func
                         IconButton(onPressed: (){_launchInBrowser(_launchWhatsUrl);}, icon: Icon(MdiIcons.whatsapp),color: Colors.green,),
                         IconButton(onPressed: (){_launchInBrowser(_launchTwitterUrl);}, icon: Icon(MdiIcons.twitter),color: Colors.blue,),
                         IconButton(onPressed: (){_launchInBrowser(_launchFacebookUrl);}, icon: Icon(MdiIcons.facebook),color: Colors.blue,),
