@@ -101,6 +101,7 @@ class _VerifyRestoreState extends State<VerifyRestore> {
                         Text(
                           'Don\'t receive the message?',
                         ),
+
                         TextButton(
                           onPressed: (){},
                           child: Text('Send Code'),
